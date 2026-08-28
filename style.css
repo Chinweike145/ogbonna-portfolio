@@ -308,6 +308,22 @@ body{
     color:#00f5d4;
 }
 
+.project-date{
+    color:#9ca3af;
+    display:block;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.project-diagram{
+    width:100%;
+    border-radius:14px;
+    background:#0b1120;
+    padding:10px;
+    margin:15px 0;
+    display:block;
+}
+
 .project-card p{
     line-height:1.7;
     color:#d1d5db;
