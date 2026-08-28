@@ -6,7 +6,7 @@ FILE: index.html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ogbonna Chinweike | AI/ML Portfolio</title>
+    <title>Ogbonna Chinweike | AI &amp; Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@ FILE: index.html
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="#video">Demo</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -40,14 +41,15 @@ FILE: index.html
             </h1>
 
             <h2>
-                AI/ML Engineer • Full Stack Developer • Researcher
+                AI/ML Engineer • Cybersecurity Researcher • Full-Stack Developer
             </h2>
 
             <p class="hero-text">
                 Passionate about Artificial Intelligence, Machine Learning,
-                NLP, and full-stack web development. Building intelligent
-                systems that solve real-world problems through scalable,
-                human-centered solutions.
+                Cybersecurity, and full-stack web development. Building
+                intelligent, secure systems — including vulnerability
+                intelligence platforms — that solve real-world problems
+                through scalable, human-centered design.
             </p>
 
             <div class="hero-buttons">
@@ -132,6 +134,11 @@ FILE: index.html
             <div class="skill-card">
                 <h3>AI & Machine Learning</h3>
                 <p>TensorFlow, Keras, Scikit-learn, NLP, Deep Learning</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Security Tools</h3>
+                <p>Nmap, OWASP ZAP, Metasploit</p>
             </div>
 
             <div class="skill-card">
@@ -240,6 +247,34 @@ FILE: index.html
         <div class="projects-grid">
 
             <div class="project-card">
+                <h3>VulnIntel — Dual-Engine Vulnerability Intelligence System</h3>
+
+                <span class="project-date">MSc Dissertation Project · Mar 2026 – present</span>
+
+                <img src="vulnintel-architecture.svg" alt="VulnIntel dual-engine architecture: NVD API into preprocessing, split into Discovery Engine (Autoencoder + HDBSCAN) and Guardian Engine (Autoencoder + GMM), merging into an async Django dashboard" class="project-diagram">
+
+                <p>
+                    A dual-engine vulnerability intelligence platform combining
+                    a Discovery Engine (Autoencoder + HDBSCAN) and a Guardian
+                    Engine (Autoencoder + GMM) for CVE clustering and risk
+                    scoring. Trained and evaluated on ~82,000 NVD CVE records
+                    (2023–2025), producing 8 defensible threat clusters, and
+                    served through a live, fully async Django dashboard with
+                    CVE lookup, cluster visualization, and report export.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Autoencoder</span>
+                    <span>HDBSCAN</span>
+                    <span>NVD API</span>
+                </div>
+
+                
+            </div>
+
+            <div class="project-card">
                 <h3>Mental Health Analysis & AI Intervention</h3>
 
                 <p>
@@ -310,6 +345,48 @@ FILE: index.html
                 </div>
 
                 
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS & PATENTS -->
+    <section id="publications" class="section">
+        <h2 class="section-title">Publications & Patents</h2>
+
+        <div class="education-container">
+
+            <div class="education-card">
+                <h3>Book Chapter — Accepted</h3>
+
+                <span>
+                    Explainable Artificial Intelligence (XAI) Techniques for
+                    Vulnerability Risk Assessment and Prioritization in
+                    Modern Industrial and Cyber-Physical Environments
+                </span>
+
+                <p>
+                    CRC Press (Taylor &amp; Francis) — in "Smart Industry 4.0:
+                    Computational Approaches for Optimization and Automation".
+                </p>
+            </div>
+
+            <div class="education-card">
+                <h3>Patent — Security Monitoring Device</h3>
+
+                <span>
+                    Autonomous Security Robot · Patent No. 202421091867 · Issued Dec 2024
+                </span>
+
+                <p>
+                    Co-invented an autonomous security robot integrating motion,
+                    infrared, and proximity sensors with HD/night-vision cameras
+                    and GPS-based pathfinding navigation for adaptive, real-time
+                    patrol. Designed a machine learning-driven threat analysis
+                    pipeline enabling real-time anomaly detection, automated
+                    alerting, and incident logging, with reduced false positives
+                    compared to static security systems.
+                </p>
             </div>
 
         </div>
